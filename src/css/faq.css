@@ -20,16 +20,6 @@
   color: #00b068;
 }
 
-.question {
-  /* font-family: 'Mobile/caption-360'; */
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 0.5px;
-  color: rgba(41, 41, 41, 1);
-  /* max-width: 224px; */
-}
-
 .asked-question-list {
   max-width: 320px;
   display: flex;
@@ -38,7 +28,11 @@
   align-items: center;
 }
 
-.asked-question-item {
+.asked-question-item.ac {
+  margin-top: 0;
+  border: none;
+  background-color: transparent;
+  box-sizing: inherit;
   display: flex;
   text-transform: uppercase;
   flex-direction: column;
@@ -48,7 +42,7 @@
   border-bottom: 1px rgba(204, 204, 204, 1) solid;
 }
 
-.ac-header {
+.question-header-container.ac-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,7 +54,7 @@
   height: 32px;
 }
 
-.asked-question-item-open {
+.asked-question-item.ac.is-active {
   display: flex;
   flex-direction: column;
   padding: 28px 24px 28px 24px;
@@ -70,21 +64,29 @@
   border-radius: 16px;
 }
 
-.question-answer-p {
-  max-width: 272px;
+.question {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 1);
+  /* max-width: 224px; */
+}
+
+.question-answer-p.ac-panel {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
   text-transform: none;
+  width: 100%;
 }
 
-/* .ac.js-enabled .ac-text {
-  visibility: hidden;
+@media screen and (min-width: 360px) {
+  .asked-question-list {
+    max-width: 340px;
+  }
 }
-.ac.is-active .ac-text {
-  visibility: visible;
-} */
 
 @media screen and (min-width: 768px) {
   .accordion-section {
@@ -95,12 +97,17 @@
     max-width: 704px;
   }
 
-  .asked-question-item {
+  .asked-question-item.ac {
     min-width: 650px;
   }
 
-  .question-answer-p {
-    max-width: 656px;
+  .question {
+    width: 600px;
+  }
+
+  .question-answer-p.ac-panel {
+    /* max-width: 656px; */
+    width: 100%;
   }
 }
 
@@ -118,11 +125,12 @@
     margin-left: auto;
   }
 
-  .asked-question-item {
+  .asked-question-item.ac {
     max-width: 592px;
   }
 
-  .question-answer-p {
-    max-width: 544px;
+  .question-answer-p.ac-panel {
+    /* max-width: 544px; */
+    width: 100%;
   }
 }
