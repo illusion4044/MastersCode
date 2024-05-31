@@ -40,3 +40,24 @@ width: 40px;
 height: 40px;
 
 }
+
+.reviews-img {
+    width: 40px;
+    height: 40px;
+     border-radius: 50%;
+}
+
+.review-text{
+   margin-bottom: 24px;
+   font-weight: 300;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+}
+
+.swiper-img-container{
+display: flex;
+align-items: center;
+gap: 16px;
+margin-bottom: 32px;
+}
