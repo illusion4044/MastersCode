@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.tech-skills {
+min-width: 320px;
+/* max-width: 360px; */
+height: 245px;
+margin: 0 auto;
+}
+
+.marquee {
+	overflow: hidden;
+	font-family: "Pridi", sans-serif;
+	font-weight: 600;
+	font-size: 34px;
+	text-transform: uppercase;
+
+ }
+ 
+ .marquee__inner {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 16px;
+background-color: #bcdfd1;
+padding: 32px 0px;
+
+ }
+
+ .trn-mode {
+	background: #e4e5e6;
+transform: rotate(2deg);
+ }
+ 
+ .marquee__line {
+	flex-shrink: 0;
+	margin: 0;
+	padding: 10px 15px;
+	min-width: 100%;
+	white-space: nowrap;
+	animation-name: marqueeLine;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	display: block;
+ }
+ 
+ @keyframes marqueeLine {
+	from {
+	  transform: translateX(0);
+	}
+	
+	to {
+	  transform: translateX(-100%);
+	}
+ }
+
+ .color-mode {
+	color: #00b068;
+ }
+
+ .green-cube::before {
+	display: block;
+	content: "";
+	border-radius: 2px;
+width: 8px;
+height: 8px;
+background: #00b068;
+transform: rotate(-180deg);
+/* margin: 10px; */
+
+ }
+
+.black-cube::before {
+	display: block;
+	content: "";
+	background: #292929;
+transform: rotate(-180deg);
+border-radius: 2px;
+width: 8px;
+height: 8px;
+/* margin: 10px; */
+}
+
+@media only screen and (min-width: 768px) {
+	.tech-skills {
+height: 282px;
+	}
+
+	.marquee__inner {
+		padding: 40px 0px;
+height: 128px;
+	}
+}
