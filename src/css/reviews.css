@@ -1,0 +1,42 @@
+.reviews-header {
+font-size: 52px;
+line-height: 1.23077;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: black;
+text-align: center;
+margin-bottom: 40px;
+}
+
+.reviews-swiper {
+    background-color: lightgray;
+    border-radius: 16px;
+padding: 32px;
+height: 296px;
+margin-bottom: 24px;
+}
+
+.buttons {
+    display: flex;
+justify-content: flex-end;
+gap: 16px;
+}
+
+.svg-prev {
+    border: 1px solid rgba(41, 41, 41, 0.3);
+border-radius: 8px;
+padding: 12px;
+width: 40px;
+height: 40px;
+transform: rotate(-180deg);
+}
+
+
+.svg-next {
+ border: 1px solid rgba(41, 41, 41, 0.3);
+border-radius: 8px;
+padding: 12px;
+width: 40px;
+height: 40px;
+
+}
