@@ -1,5 +1,4 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+
 
 function createMarkup(review) {
   return `<li class="swiper-slide">
