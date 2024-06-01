@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./reset.css');
 @import url('./base.css');
 @import url('./common.css');
 @import url('./header.css');
@@ -16,4 +17,4 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./footer.css');
-
+@import url('./modal.css');
