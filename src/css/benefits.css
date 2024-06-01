@@ -1,50 +1,71 @@
-.benefits {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 20px;
-  gap: 40px;
+@media screen and (min-width: 320px) and (max-width: 360px) {
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 40px;
+  }
+
+  .benefits-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .benefits-svg {
+    width: 24px;
+    height: 24px;
+    padding: 3px 4px 3px 4px;
+    background: rgba(0, 176, 104, 0.1);
+  }
+
+  .benefits-svg-link {
+    fill: rgba(0, 176, 104, 1);
+  }
+
+  .benefits-li-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .benefits-h1 {
+    font-family: Impact;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 1.7999999523162842px;
+    text-align: left;
+  }
+
+  .benefits-h1-span {
+    color: rgba(0, 176, 104, 1);
+  }
+
+  .benefits-li-h4 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+
+  .benefits-li-p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
 }
 
-.benefits-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+/*
+@media screen and (min-width: 768px) {
 }
 
-.benefits-li-text {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+@media screen and (min-width: 1280px) {
 }
-
-.benefits-h1 {
-  font-family: Impact;
-  font-size: 52px;
-  font-weight: 400;
-  line-height: 64px;
-  letter-spacing: 1.7999999523162842px;
-  text-align: left;
-}
-
-.benefits-h1-span {
-  color: rgba(0, 176, 104, 1);
-}
-
-.benefits-li-h4 {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.5px;
-  text-align: left;
-}
-
-.benefits-li-p {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: left;
-}
+*/
