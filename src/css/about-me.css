@@ -287,6 +287,20 @@ height: 408px;
 	width: 904px;
 height: 280px;
 gap: 136px;
+position: absolute;
+top: 964px;
+left: 208px;
+}
+
+
+
+.my-photo {
+	border-radius: 16px;
+	width: 384px;
+	height: 448px;
+position: absolute;
+top: 436px;
+left: 208px;
 }
 
 

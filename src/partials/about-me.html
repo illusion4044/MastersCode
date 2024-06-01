@@ -2,7 +2,19 @@
 	<div class="wrap-box-about">
 		<div class="about-me-photo">
 			<h2 class="title-about">ABOUT <span class="me"> ME</span></h2>
-			<img src="../img/about-me_img/mob-aboutme-2x.jpg" alt="my photo" class="my-photo">
+			<!-- <img src="../img/about-me_img/mob-aboutme-2x.jpg" alt="my photo" class="my-photo"> -->
+			<picture class="my-photo">
+				<source srcset="../img/about-me_img/desk-aboutme-1x.jpg 1x, ../img/about-me_img/desk-aboutme-2x.jpg 2x"
+					media="(min-width: 1280px)" />
+
+				<source srcset="../img/about-me_img/tab-aboutme-1x.jpg 1x,
+				../img/about-me_img/tab-aboutme-2x.jpg 2x," media="(min-width: 768px)" />
+
+				<source srcset="../img/about-me_img/mob-aboutme-1x.jpg 1x,
+				../img/about-me_img/mob-aboutme-2x.jpg 2x" media="(max-width: 767px)" />
+
+				<img src="../img/about-me_img/desk-aboutme-1x.jpg" alt="my photo" width="384" height="448">
+			</picture>
 		</div>
 		<div class="bio">
 			<h3 class="classic-title">BIO</h3>
