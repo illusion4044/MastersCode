@@ -14,7 +14,7 @@
   padding: 20px;
 }
 
-.logo {
+.header-logo {
   font-family: Impact, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -24,7 +24,7 @@
   margin-left: 20px;
 }
 
-.logo-green {
+.header-logo-green {
   color: #00b068;
 }
 
@@ -140,7 +140,7 @@ input:checked + .slider:before {
     padding: 32px;
   }
 
-  .logo {
+  .header-logo {
     font-weight: 400;
     font-size: 32px;
     letter-spacing: 0.05em;
