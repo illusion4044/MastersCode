@@ -1,4 +1,3 @@
-import '../css/modal.css'
 
 // dom element 
 const btnClose = document.querySelector('.modal-form-close');
