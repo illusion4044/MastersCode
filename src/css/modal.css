@@ -5,10 +5,8 @@
     left: 0;
     width: 100%;
     min-height: 100%;
-    opacity: 0;
-    visibility: collapse;
+    display: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
@@ -17,8 +15,7 @@
 }
 
 .is-open {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
 }
 
 .modal-header {
