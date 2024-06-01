@@ -1,4 +1,5 @@
-
+import Swiper from 'swiper';
+import 'swiper/css';
 
 
 
@@ -27,4 +28,28 @@ async function fetchReviews() {
   }
 }
 
+function createSwiper() {
+  new Swiper
+}
 
+async function FetchMarkup(createSwiper, createMarkup) {
+  const reviewsList = document.querySelector('.reviews-swiper');
+  if (!reviewsList) {
+    console.error('Element .reviews-swiper not found');
+    return;
+  }
+
+  const reviews = await fetchReviews();
+  if (!reviews) {
+    reviewsList.innerHTML = 'Not found';
+    return;
+  }
+
+  const markup = reviews.map(review => createMarkup(review)).join('');
+  reviewsList.innerHTML = markup;
+  createSwiper();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  FetchMarkup(createSwiper, createMarkup);
+});
