@@ -49,7 +49,6 @@ img {
 	padding-right: 20px;
 	padding-left: 20px;
 	height: 1750px;
-	/* background-color: #FBFBFB; */
 	margin-bottom: 80px;
 
 
@@ -83,7 +82,6 @@ align-items: flex-start;
 }
 
 .my-photo {
-	/* margin: 0 auto; */
 	object-fit: cover;
 
 }
@@ -107,7 +105,6 @@ line-height: 1.25;
 letter-spacing: 0.02em;
 text-transform: uppercase;
 color: #292929;
-/* margin-bottom: 32px; */
 }
 
 .text-wrap {
