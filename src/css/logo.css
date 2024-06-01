@@ -1,0 +1,13 @@
+.header-logo {
+  font-family: Impact, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.header-logo-green {
+  color: #00b068;
+}
