@@ -55,7 +55,7 @@ img {
 
 }
 
-.wrap {
+.wrap-box-about {
 	position: relative;
 }
 
@@ -222,13 +222,29 @@ top: 532px;
 	.bio {
 		margin-left: auto;
 		margin-bottom: 140px;
+		width: 336px;
+height: 680px;
+	}
+
+	.classic-title {
+font-size: 36px;
+line-height: 1.33333;
+letter-spacing: 0.01em;
+	}
+
+	.text-wrap {
+width: 336px;
+height: 600px;
 	}
 
 	.content-wrap {
 		width: 704px;
 height: 280px;
 display: flex;
+align-items: flex-start;
+justify-content: flex-start;
 flex-direction: row;
+gap: 32px;
 		}
 
 		.education {
@@ -249,13 +265,31 @@ flex-direction: row;
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
 
 .about-me {
-	padding: 0px 32px;
-max-width: 1200px;
-height: 1244px;
+	max-width: 1280px;
+	height: 1244px;
 }
+
+.bio {
+width: 488px;
+height: 488px;
+margin-bottom: 312px;
+}
+
+.text-wrap {
+	width: 488px;
+height: 408px;
+}
+
+.content-wrap {
+	width: 904px;
+height: 280px;
+gap: 136px;
+}
+
+
 
 
 	
