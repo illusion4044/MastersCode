@@ -1,3 +1,7 @@
+.reviews {
+  padding-bottom: 80px;
+}
+
 .reviews-header {
   font-size: 52px;
   line-height: 1.23077;
@@ -99,4 +103,14 @@
   content: none !important; 
 }
 
+@media screen and (min-width: 768px){
+.reviews {
+  padding-bottom: 124px;
+}
+}
 
+@media screen and (min-width: 1280px){
+.reviews {
+  padding-bottom: 164px;
+}
+}
