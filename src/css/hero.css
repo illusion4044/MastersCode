@@ -1,17 +1,22 @@
 .section {
-  
 }
 .hero-section {
-	padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .hero-container {
   padding-bottom: 72px;
   box-sizing: border-box;
+  background-image: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png');
+  background-size: cover; /* розтягнути зображення, щоб покрити весь елемент */
+  background-repeat: no-repeat; /* не повторювати зображення */
+  background-position: center 16px; /* вирівняти зображення по центру */
 }
+
 .hero-text-content {
-  padding-top: 112px;
+  margin-top: 112px;
 }
+
 .hero-title {
   font-family: Impact, sans-serif;
   font-weight: 400;
@@ -73,7 +78,6 @@
   margin-bottom: 40px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .hero-btn-square:hover {
@@ -112,7 +116,6 @@
   letter-spacing: 0.03em;
 }
 
-
 /* ============= Tablet ============= */
 
 @media only screen and (min-width: 768px) {
@@ -122,10 +125,14 @@
 
   .hero-container {
     padding-bottom: 80px;
+    background-image: url('../img/basic-fone_img/tab-basic-decor\ bg\ 5-1x.png');
+    background-size: cover; /* розтягнути зображення, щоб покрити весь елемент */
+    background-repeat: no-repeat; /* не повторювати зображення */
+    background-position: center center; /* вирівняти зображення по центру */
   }
 
   .hero-text-content {
-    padding-top: 88px;
+    margin-top: 88px;
   }
 
   .hero-title {
@@ -175,8 +182,7 @@
 /* ============= Desktop ============= */
 
 @media only screen and (min-width: 1280px) {
- 
-	.hero-section {
+  .hero-section {
     padding-bottom: 164px;
   }
 
@@ -185,7 +191,7 @@
   }
 
   .hero-text-content {
-    padding-top: 88px;
+    margin-top: 88px;
   }
 
   .hero-title {
