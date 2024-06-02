@@ -27,8 +27,6 @@ async function fetchReviews() {
   }
 }
 
-
-
 function createSwiper() {
   new Swiper('.swiper-container', {
     slidesPerView: 1,
@@ -92,13 +90,11 @@ async function FetchMarkup(createSwiper, createMarkup) {
     console.error('Element #reviews-list not found');
     return;
   }
-
   const reviews = await fetchReviews();
   if (!reviews) {
     reviewsList.innerHTML = 'Not found';
     return;
   }
-
   const markup = reviews.map(review => createMarkup(review)).join('');
   reviewsList.innerHTML = markup;
   createSwiper();
