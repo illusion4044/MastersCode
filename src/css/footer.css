@@ -1,19 +1,12 @@
-.container-footer {
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .logo {
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: black;
 }
 .footer-logo {
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: green;
@@ -32,15 +25,70 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: black;
 }
 
 .text {
-  margin-top: 40px;
+  padding-top: 40px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: black;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-footer {
+  min-width: 320px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*-----------------------------tablet--------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .container-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 0px;
+  }
+  .social-list {
+    display: flex;
+    flex-direction: row;
+    width: 412px;
+    height: 24px;
+    gap: 40px;
+  }
+
+  .text {
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: unset;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*-------------------------------desk---------------------------------------------------*/
+@media only screen and (min-width: 1280px) {
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .social-list {
+    margin-top: 0px;
+    margin-left: auto;
+    padding-right: 0px;
+  }
+  .text {
+    text-align: unset;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
