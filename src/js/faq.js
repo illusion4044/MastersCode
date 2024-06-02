@@ -22,7 +22,11 @@ function getInnerHtml(items) {
           <h3 class="question">
             ${item.question}
           </h3>
-          <div class="arrow-btn">d</div>
+          <div class="arrow-btn">
+            <svg class="accordion-svg" width="32" height="32">
+              <use href="../img/symbol-defs.svg#icon-down"></use>
+            </svg>
+          </div>
         </div>
         <p class="question-answer-p ac-panel">
           ${item.answer}

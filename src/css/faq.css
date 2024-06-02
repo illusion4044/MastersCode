@@ -49,10 +49,16 @@
 }
 
 .arrow-btn {
-  border: 1px solid tomato;
+  /* display: flex;
+  align-items: baseline; */
+  /* border: 1px solid tomato; */
   width: 32px;
   height: 32px;
 }
+
+/* .accordion-svg {
+  display: ;
+} */
 
 .asked-question-item.ac.is-active {
   display: flex;
@@ -70,7 +76,6 @@
   line-height: 18px;
   letter-spacing: 0.03em;
   color: rgba(41, 41, 41, 1);
-  /* max-width: 224px; */
 }
 
 .question-answer-p.ac-panel {
@@ -106,7 +111,6 @@
   }
 
   .question-answer-p.ac-panel {
-    /* max-width: 656px; */
     width: 100%;
   }
 }
@@ -130,7 +134,6 @@
   }
 
   .question-answer-p.ac-panel {
-    /* max-width: 544px; */
     width: 100%;
   }
 }
