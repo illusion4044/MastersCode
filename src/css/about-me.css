@@ -76,10 +76,12 @@ color: #292929;
 margin-bottom: 40px;
 display: flex;
 align-items: flex-start;
+white-space: pre;
 }
 
 .me {
 	color: #00b068;
+
 }
 
 .my-photo {
