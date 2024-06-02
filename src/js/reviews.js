@@ -1,5 +1,5 @@
-// import Swiper from 'swiper/bundle';
-// import 'swiper/css/bundle';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const buttonNext = document.querySelector('.swiper-button-next');
 const buttonPrev = document.querySelector('.swiper-button-prev');
@@ -19,8 +19,6 @@ async function fetchReviews() {
     return null;
   }
 }
-
-
 
 function createSwiper() {
   new Swiper('.swiper-container', {
