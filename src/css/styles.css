@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./popup-modal.css');
 @import url('./logo.css');
 @import url('./reset.css');
 @import url('./base.css');
