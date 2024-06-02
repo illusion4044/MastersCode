@@ -53,7 +53,13 @@
     width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
-    background: url('../img/mob-basicfone-2x.png') center/cover no-repeat;
+    background: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png') center/cover no-repeat;
+}
+
+@media (min-resolution: 192dpi) {
+    .modal-main {
+        background-image: url('../img/basic-fone_img/mob-mod-decor\ bg\ 1-2x.png');
+    }
 }
 
 .modal-list {
