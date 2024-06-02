@@ -50,6 +50,7 @@ img {
 	padding-left: 20px;
 	height: 1750px;
 	margin-bottom: 80px;
+	position: relative;
 
 
 }
@@ -140,6 +141,7 @@ background: #00b068;
 transform: rotate(-180deg);
 line-height: 24px;
 margin: 10px;
+flex-shrink: 0;
 
 }
 
@@ -152,6 +154,9 @@ margin: 10px;
 
 .content-wrap {
 width: 320px;
+display: flex;
+flex-direction: column;
+gap: 40px;
 }
 
 .education {
@@ -199,7 +204,9 @@ height: 96px;
 		margin: 0 auto;
 		height: 1264px;
 		margin-bottom: 124px;
+		
 	}
+
 
 	.title-about {
 font-size: 108px;
@@ -221,6 +228,15 @@ top: 532px;
 		margin-bottom: 140px;
 		width: 336px;
 height: 680px;
+	}
+
+	.bgi-wrap {
+		background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
+		width: 336px;
+		height: 252px;
+		position: absolute;
+		top: 856px;
+		left: 368px;
 	}
 
 	.classic-title {
@@ -273,6 +289,14 @@ gap: 32px;
 width: 488px;
 height: 488px;
 margin-bottom: 312px;
+}
+.bgi-wrap {
+	background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
+	width: 384px;
+	height: 288px;
+	position: absolute;
+	top: 692px;
+	left: 832px;
 }
 
 .text-wrap {
