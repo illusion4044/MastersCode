@@ -1,70 +1,103 @@
 .reviews-header {
-font-size: 52px;
-line-height: 1.23077;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: black;
-text-align: center;
-margin-bottom: 40px;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .reviews-swiper {
-    background-color: lightgray;
-    border-radius: 16px;
-padding: 32px;
-
-margin-bottom: 24px;
-display: flex;
-
-}
-
-.buttons {
-    display: flex;
-justify-content: flex-end;
+  display: flex;
+  flex-wrap: nowrap;
 gap: 16px;
+  justify-content: flex-start;
+  max-width: 100%;
+  margin-bottom: 24px;
+  list-style: none;
+  padding: 0;
 }
 
-.svg-prev {
-    border: 1px solid rgba(41, 41, 41, 0.3);
-border-radius: 8px;
-padding: 12px;
-width: 40px;
-height: 40px;
-transform: rotate(-180deg);
+.reviews-swiper .swiper-slide {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: auto;
+  gap: 16px;
 }
 
+.review {
+  background-color: lightgray;
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  box-sizing: border-box;
+}
 
-.svg-next {
- border: 1px solid rgba(41, 41, 41, 0.3);
-border-radius: 8px;
-padding: 12px;
-width: 40px;
-height: 40px;
+.arrow-naw {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
 
+.button-prev, .button-next {
+  border: 1px solid rgba(41, 41, 41, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-back {
+  transform: rotate(-180deg);
 }
 
 .reviews-img {
-    width: 40px;
-    height: 40px;
-     border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.review-text{
-   margin-bottom: 24px;
-   font-weight: 300;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.03em;
+.review-text {
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
-.swiper-img-container{
-display: flex;
-align-items: center;
-gap: 16px;
-margin-bottom: 32px;
+.swiper-img-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
 }
 
-.reviews-swiper-container {
-    display: flex;
-    gap: 32px;
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden; 
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .reviews-swiper .swiper-slide {
+    width: 704px;
+   
+  }
+}
+
+@media screen  and (min-width: 1440px) {
+  .reviews-swiper .swiper-slide {
+    width: 592px;
+  }
+ 
 }
