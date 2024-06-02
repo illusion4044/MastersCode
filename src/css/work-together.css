@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   padding: 80px 20px;
   margin: 0 auto;
   /*display: flex;
@@ -54,6 +55,11 @@
   letter-spacing: 0.03em;
   color: #292929;
 }
+.contacts-input:focus,
+.contacts-input:active {
+  border: none;
+  outline: none;
+}
 .contacts-list-link-icon {
   width: 20px;
   height: 20px;
@@ -77,6 +83,7 @@
   background: #e4e5e6;
   border: none;
   width: 100%;
+  z-index: 2;
 }
 .contacts-button {
   font-family: Poppins, sans-serif;
@@ -97,29 +104,27 @@
 .contacts-button:hover {
   background: #009156;
 }
+.contacts-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 32px 0 0;
+  z-index: 0;
+  display: none;
+}
+.contacts-list-container {
+  display: flex;
+  align-items: center;
+}
 /*mobile*/
 @media screen and (min-width: 359.98px) and (max-width: 767.98px) {
-  .contacts {
-    width: 320px;
-  }
-  .contacts-header {
-    width: 320px;
-  }
-  .contacts-text {
-    width: 320px;
-  }
-  .contacts-list {
-    width: 320px;
-  }
-  .contacts-label {
-    width: 320px;
-  }
-  .contacts-input {
-    width: 320px;
-  }
-  .contacts-form {
-    width: 320px;
-  }
+  .contacts,
+  .contacts-header,
+  .contacts-text,
+  .contacts-list,
+  .contacts-label,
+  .contacts-input,
+  .contacts-form,
   .contacts-button {
     width: 320px;
   }
@@ -153,6 +158,10 @@
   .contacts-form {
     gap: 32px;
   }
+  .contacts-dekstop-container,
+  .contacts-dekstop-container-smallbox {
+    width: 704px;
+  }
   .contacts-label {
     width: 704px;
   }
@@ -164,6 +173,9 @@
     padding: 12px 24px;
     width: 173px;
     height: 48px;
+  }
+  .contacts-img {
+    display: block;
   }
 }
 @media screen and (min-width: 1279.98px) {
@@ -191,5 +203,10 @@
   }
   .contacts-button {
     width: 173px;
+  }
+  .contacts-img {
+    width: 526px;
+    height: 408px;
+    display: block;
   }
 }
