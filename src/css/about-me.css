@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.about-me {
+	min-width: 320px;
+	max-width: 360px;
+	margin: 0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: 1750px;
+	margin-bottom: 80px;
+	position: relative;
+
+
+}
+
+.wrap-box-about {
+	position: relative;
+}
+
+.about-me-photo {
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.title-about {
+	font-family: "Impact", sans-serif;
+font-weight: 400;
+font-size: 52px;
+line-height: 1.23077;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: right;
+color: #292929;
+margin-bottom: 40px;
+display: flex;
+align-items: flex-start;
+white-space: pre;
+}
+
+.me {
+	color: #00b068;
+
+}
+
+.my-photo {
+	object-fit: cover;
+
+}
+
+.bio {
+	margin-bottom: 40px;
+	display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 32px;
+width: 320px;
+height: 696px;
+}
+
+.classic-title {
+	font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 32px;
+line-height: 1.25;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #292929;
+}
+
+.text-wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: 24px;
+	height: 624px;
+	width: 320px;
+
+}
+
+.text-style {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #292929;
+	display: flex;
+}
+
+
+
+.edu-role-mod::before {
+	display: inline-block;
+	content: '';
+	border-radius: 1px;
+width: 4px;
+height: 4px;
+background: #00b068;
+transform: rotate(-180deg);
+line-height: 24px;
+margin: 10px;
+flex-shrink: 0;
+
+}
+
+.text-mod1 {
+}
+
+.text-mod2 {
+	
+}
+
+.content-wrap {
+width: 320px;
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.education {
+	display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 32px;
+height: 288px;
+}
+
+.education-list {
+	display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 12px;
+height: 216px;
+}
+
+.role {
+	display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 32px;
+height: 168px;
+}
+
+.role-list {
+	display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 12px;
+height: 96px;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.about-me{
+		max-width: 768px;
+		padding-right: 32px;
+		padding-left: 32px;
+		margin: 0 auto;
+		height: 1264px;
+		margin-bottom: 124px;
+		
+	}
+
+
+	.title-about {
+font-size: 108px;
+line-height: 1.14815;
+letter-spacing: 0.02em;
+
+	}
+
+	.my-photo {
+		border-radius: 16px;
+width: 336px;
+height: 392px;
+position: absolute;
+top: 532px;
+	}
+
+	.bio {
+		margin-left: auto;
+		margin-bottom: 140px;
+		width: 336px;
+height: 680px;
+	}
+
+	.bgi-wrap {
+		background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
+		width: 336px;
+		height: 252px;
+		position: absolute;
+		top: 856px;
+		left: 368px;
+	}
+
+	.classic-title {
+font-size: 36px;
+line-height: 1.33333;
+letter-spacing: 0.01em;
+	}
+
+	.text-wrap {
+width: 336px;
+height: 600px;
+	}
+
+	.content-wrap {
+		width: 704px;
+height: 280px;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 32px;
+		}
+
+		.education {
+			width: 336px;
+			height: 280px;
+		}
+
+		.role {
+			width: 336px;
+			height: 184px;
+		}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+.about-me {
+	max-width: 1280px;
+	height: 1244px;
+}
+
+.bio {
+width: 488px;
+height: 488px;
+margin-bottom: 312px;
+}
+.bgi-wrap {
+	background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
+	width: 384px;
+	height: 288px;
+	position: absolute;
+	top: 692px;
+	left: 832px;
+}
+
+.text-wrap {
+	width: 488px;
+height: 408px;
+}
+
+.content-wrap {
+	width: 904px;
+height: 280px;
+gap: 136px;
+position: absolute;
+top: 964px;
+left: 208px;
+}
+
+
+
+.my-photo {
+	border-radius: 16px;
+	width: 384px;
+	height: 448px;
+position: absolute;
+top: 436px;
+left: 208px;
+}
+
+
+
+
+	
+}
+
+
