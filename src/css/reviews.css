@@ -10,7 +10,7 @@
 .reviews-swiper {
   display: flex;
   flex-wrap: nowrap;
-gap: 16px;
+
   justify-content: flex-start;
   max-width: 100%;
   margin-bottom: 24px;
@@ -23,7 +23,7 @@ gap: 16px;
   align-items: stretch;
   width: 100%;
   height: auto;
-  gap: 16px;
+  
 }
 
 .review {
@@ -47,12 +47,14 @@ gap: 16px;
   border: 1px solid rgba(41, 41, 41, 0.3);
   border-radius: 8px;
   padding: 12px;
-  width: 40px;
-  height: 40px;
+  width: 40px!important;
+  height: 40px!important;
+ 
 }
 
 .icon-back {
   transform: rotate(-180deg);
+  fill: black;
 }
 
 .reviews-img {
@@ -86,18 +88,15 @@ gap: 16px;
   overflow: hidden; 
 }
 
-
-
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-  .reviews-swiper .swiper-slide {
-    width: 704px;
-   
-  }
+.swiper-button-prev, .swiper-button-next {
+    position: static !important;
+    margin-top: 0 !important;
+  
 }
 
-@media screen  and (min-width: 1440px) {
-  .reviews-swiper .swiper-slide {
-    width: 592px;
-  }
- 
+.swiper-button-prev:after, 
+.swiper-button-next:after {
+  content: none !important; 
 }
+
+
