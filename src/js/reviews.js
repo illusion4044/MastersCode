@@ -1,7 +1,6 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-
 const buttonNext = document.querySelector('.swiper-button-next');
 const buttonPrev = document.querySelector('.swiper-button-prev');
 
@@ -20,8 +19,6 @@ async function fetchReviews() {
     return null;
   }
 }
-
-
 
 function createSwiper() {
   new Swiper('.swiper-container', {
@@ -86,13 +83,11 @@ async function FetchMarkup(createSwiper, createMarkup) {
     console.error('Element #reviews-list not found');
     return;
   }
-
   const reviews = await fetchReviews();
   if (!reviews) {
     reviewsList.innerHTML = 'Not found';
     return;
   }
-
   const markup = reviews.map(review => createMarkup(review)).join('');
   reviewsList.innerHTML = markup;
   createSwiper();
