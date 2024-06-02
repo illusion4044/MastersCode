@@ -72,7 +72,7 @@ line-height: 1.23077;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-align: right;
-color: #292929;
+/* color: #292929; */
 margin-bottom: 40px;
 display: flex;
 align-items: flex-start;
@@ -84,8 +84,13 @@ white-space: pre;
 
 }
 
+.br-img {
+	border-radius: 16px;
+}
+
 .my-photo {
 	object-fit: cover;
+	
 
 }
 
@@ -107,7 +112,7 @@ font-size: 32px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 text-transform: uppercase;
-color: #292929;
+/* color: #292929; */
 }
 
 .text-wrap {
@@ -127,7 +132,7 @@ color: #292929;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
-	color: #292929;
+	/* color: #292929; */
 	display: flex;
 }
 
@@ -148,10 +153,11 @@ flex-shrink: 0;
 }
 
 .text-mod1 {
+	
 }
 
 .text-mod2 {
-	
+
 }
 
 .content-wrap {
