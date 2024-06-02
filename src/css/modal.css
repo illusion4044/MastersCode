@@ -56,6 +56,12 @@
     background: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png') center/cover no-repeat;
 }
 
+@media (min-resolution: 192dpi) {
+    .modal-main {
+        background-image: url('../img/basic-fone_img/mob-mod-decor\ bg\ 1-2x.png');
+    }
+}
+
 .modal-list {
     display: inline-flex;
     flex-direction: column;
