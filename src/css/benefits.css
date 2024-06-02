@@ -1,9 +1,8 @@
-@media screen and (min-width: 320px) and (max-width: 360px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .benefits {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     gap: 40px;
   }
 
@@ -11,6 +10,15 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+  }
+
+  .benefits-li {
+    gap: 16px;
+    opacity: 1;
+  }
+
+  .empty-block {
+    display: none;
   }
 
   .benefits-svg {
@@ -27,7 +35,6 @@
   .benefits-li-text {
     display: flex;
     flex-direction: column;
-    gap: 16px;
   }
 
   .benefits-h1 {
@@ -62,10 +69,105 @@
   }
 }
 
-/*
 @media screen and (min-width: 768px) {
+  .benefits-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: -16px 0px 0px 0px;
+  }
+  .empty-block {
+    width: 336px;
+    height: 184px;
+    order: -1;
+  }
+
+  .benefits-h1 {
+    font-family: Impact;
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: 1.7999999523162842px;
+    text-align: left;
+  }
+  .benefits-h1-span {
+    color: rgba(0, 176, 104, 1);
+  }
+  .benefits-li {
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height: 184px;
+    gap: 16px;
+    opacity: 1;
+    border-radius: 16px 0px 0px 0px;
+  }
+  .benefits-svg {
+    width: 48px;
+    height: 48px;
+    padding: 12px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 1;
+    background: rgba(0, 176, 104, 0.1);
+  }
+  .benefits-li-h4 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .benefits-h1 {
+    float: left;
+    font-family: Impact;
+    font-size: 108px;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: 1.7999999523162842px;
+    text-align: left;
+    width: 700px;
+  }
+  .benefits-h1-span {
+    color: rgba(0, 176, 104, 1);
+  }
+  .benefits-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: -110px 0px 0px 0px;
+  }
+  .empty-block {
+    width: 768px;
+    order: -1;
+  }
+  .benefits-li {
+    height: 184px;
+    gap: 16px;
+    border-radius: 16px;
+    opacity: 0px;
+  }
+  .benefits-svg {
+    width: 48px;
+    height: 48px;
+    padding: 12px 0px 0px 0px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(0, 176, 104, 0.1);
+  }
 }
-*/
