@@ -71,17 +71,18 @@ font-size: 32px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 text-transform: uppercase;
-	background-color: #FFF;
+	/* background-color: #FFF; */
 	height: 245px;
+margin-right: -5px;
  }
  
  .marquee__inner {
-	display: flex;
-	align-items: center;
+display: flex;
+align-items: center;
 justify-content: flex-start;
 flex-direction: row;
-	gap: 16px;
-	padding: 32px 0px;
+gap: 16px;
+padding: 32px 0px;
 height: 104px;
 
  }
@@ -102,7 +103,7 @@ transform: rotate(2deg);
 	min-width: 100%;
 	white-space: nowrap;
 	animation-name: marqueeLine;
-	animation-duration: 5s;
+	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	font-family: "Poppins", sans-serif;
@@ -112,26 +113,86 @@ line-height: 1.25;
 letter-spacing: 0.02em;
 text-transform: uppercase;
 color: #292929;
+display: flex;
+gap: 16px;
+align-items: center;
  
  }
+
+.try-dot::before {
+	content: "";
+	background-color: #00b068;
+	width: 8px;
+	height: 8px;
+	margin: 8px 24px 8px 24px;
+	border-radius: 2px;
+	transform: rotate(-180deg);
+	display: inline-block;
+}
+
+.try-dot-black::before {
+	content: "";
+	background-color: #292929;
+	width: 8px;
+	height: 8px;
+	margin: 8px 24px 8px 24px;
+	border-radius: 2px;
+	transform: rotate(-180deg);
+	display: inline-block;
+}
+
+
+ .hidden-element {
+	content: "";
+	background-color: #00b068;
+	width: 8px;
+	height: 8px;
+	margin: 8px;
+	border-radius: 2px;
+	transform: rotate(-180deg);
+	display: inline-block;
+ }
+
+ .hidden-element-black {
+	content: "";
+	background: #292929;
+	width: 8px;
+	height: 8px;
+	margin: 8px;
+	border-radius: 2px;
+	transform: rotate(-180deg);
+	display: inline-block;
+ }
+
+ .first-cube-elem {
+	content: "";
+	background-color: #00b068;
+	width: 8px;
+	height: 8px;
+	margin: 8px;
+	border-radius: 2px;
+	transform: rotate(-180deg);
+	display: inline-block;
+ }
+
 
  .color-mode {
 color: #00b068;
  }
  
- .wrap::before {
+ /* .wrap::before {
 		display: inline-block;
 	 content: "";
 	 border-radius: 2px;
- width: 8px;
- height: 8px;
+ width: 24px;
+ height: 24px;
  background: #00b068;
  transform: rotate(-180deg);
- margin: 8px;
- }
+ padding: 8px;
+ } */
 
  .black-magic::before {
-	background: #292929;
+	
 
  }
  
