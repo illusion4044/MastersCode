@@ -25,6 +25,11 @@
     position: absolute;
     top: 22px;
     right: 22px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: #292929;
 }
 
 .modal-title {
@@ -46,7 +51,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #292929;
+    /* color: #292929; */
 }
 
 @media only screen and (min-width: 768px) {

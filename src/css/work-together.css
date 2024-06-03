@@ -1,11 +1,6 @@
 .contacts {
   position: relative;
-  padding: 80px 20px;
-  margin: 0 auto;
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
+  padding-bottom: 80px;
 }
 .contacts-header {
   font-family: Impact, sans-serif;
@@ -14,7 +9,6 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   margin: 0 0 40px;
   padding: 0px;
   width: 100%;
@@ -29,7 +23,6 @@
   line-height: 156%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
   margin: 0 0 32px;
   padding: 0px;
   width: 100%;
@@ -53,7 +46,6 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #292929;
 }
 .contacts-input:focus,
 .contacts-input:active {
@@ -75,6 +67,9 @@
   flex-direction: column;
   gap: 32px;
   width: 100%;
+}
+.contacts-label {
+  z-index: 2;
 }
 .contacts-input {
   border-radius: 8px;
@@ -108,8 +103,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 20px 32px 0 0;
-  z-index: 0;
+  z-index: 1;
   display: none;
 }
 .contacts-list-container {
@@ -118,22 +112,19 @@
 }
 /*mobile*/
 @media screen and (min-width: 359.98px) and (max-width: 767.98px) {
-  .contacts,
   .contacts-header,
   .contacts-text,
   .contacts-list,
-  .contacts-label,
-  .contacts-input,
   .contacts-form,
-  .contacts-button {
+  .contacts-dekstop-container,
+  .contacts-dekstop-container-smallbox {
     width: 320px;
   }
 }
 /*tablet*/
 @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
   .contacts {
-    padding: 124px 32px;
-    width: 704px;
+    padding-bottom: 124px;
   }
   .contacts-header {
     font-weight: 400;
@@ -180,8 +171,7 @@
 }
 @media screen and (min-width: 1279.98px) {
   .contacts {
-    padding: 164px 32px;
-    width: 1216px;
+    padding-bottom: 164px;
   }
   .contacts-header {
     margin: 0 0 80px;
