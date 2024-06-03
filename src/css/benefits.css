@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+    padding: 0px 0px 80px 0px;
   }
 
   .benefits-ul {
@@ -25,11 +26,9 @@
     width: 24px;
     height: 24px;
     padding: 3px 4px 3px 4px;
-    background: rgba(0, 176, 104, 0.1);
-  }
-
-  .benefits-svg-link {
-    fill: rgba(0, 176, 104, 1);
+    stroke-width: 1px;
+    stroke: #00b068;
+    fill: transparent;
   }
 
   .benefits-li-text {
@@ -70,6 +69,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .benefits {
+    padding: 0px 0px 124px 0px;
+  }
   .benefits-ul {
     display: flex;
     flex-direction: row;
@@ -110,8 +112,9 @@
     padding: 12px 0px 0px 0px;
     gap: 0px;
     border-radius: 8px 0px 0px 0px;
-    opacity: 1;
-    background: rgba(0, 176, 104, 0.1);
+    stroke-width: 1px;
+    stroke: #00b068;
+    fill: transparent;
   }
   .benefits-li-h4 {
     font-family: Poppins;
@@ -129,6 +132,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 0px 0px 164px 0px;
   }
   .benefits-h1 {
     float: left;
@@ -167,7 +171,8 @@
     padding: 12px 0px 0px 0px;
     gap: 0px;
     border-radius: 8px 0px 0px 0px;
-    opacity: 0px;
-    background: rgba(0, 176, 104, 0.1);
+    stroke-width: 1px;
+    stroke: #00b068;
+    fill: transparent;
   }
 }
