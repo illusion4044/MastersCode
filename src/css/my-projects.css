@@ -12,7 +12,7 @@
 .my-projects-title {
   text-align: center;
   margin-bottom: 40px;
-  color: #00b068;
+  /* color: #00b068; */
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -22,7 +22,7 @@
 }
 
 .my-projects-span {
-  color: #292929;
+  /* color: #292929; */
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -47,7 +47,7 @@
 
 .technologies {
   margin-bottom: 16px;
-  color: var(--Black, #292929);
+  /* color: var(--Black, #292929); */
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -68,7 +68,7 @@
   background: var(--Light-grey, #e4e5e6);
   border: none;
   text-transform: uppercase;
-  color: var(--Black, #292929);
+  /* color: var(--Black, #292929); */
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -107,7 +107,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #292929;
+  /* color: #292929; */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -121,7 +121,7 @@
 }
 
 .more-btn:hover {
-  color: #00b068;
+  /* color: #00b068; */
 }
 
 .btn-is-hidden {
@@ -130,7 +130,7 @@
 
 .my-project-title {
   margin-bottom: 16px;
-  color: var(--Black, #292929);
+  /* color: var(--Black, #292929); */
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -153,7 +153,7 @@
   }
 
   .my-projects-span {
-    color: var(--Black, #292929);
+    /* color: var(--Black, #292929); */
     font-size: 108px;
     line-height: 124px;
   }
