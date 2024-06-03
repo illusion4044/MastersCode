@@ -3,7 +3,7 @@
   padding-bottom: 80px;
 }
 .contacts-header {
-  font-family: Impact, sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
   line-height: 123%;
@@ -12,12 +12,13 @@
   margin: 0 0 40px;
   padding: 0px;
   width: 100%;
+  z-index: 2;
 }
 .contacts-header-span {
   color: #00b068;
 }
 .contacts-text {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
@@ -26,6 +27,7 @@
   margin: 0 0 32px;
   padding: 0px;
   width: 100%;
+  z-index: 2;
 }
 .contacts-list {
   margin: 0 0 40px;
@@ -41,7 +43,7 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
@@ -62,13 +64,29 @@
   align-items: center;
   margin-right: 18.25px;
 }
+.contacts-checkbox-icon {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 14px;
+  height: 14px;
+  stroke-width: 1px;
+  stroke: #00b068;
+  fill: #00b068;
+  align-items: center;
+  align-items: center;
+  z-index: 2;
+}
 .contacts-form {
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 100%;
+  z-index: 2;
 }
 .contacts-label {
+  position: relative;
   z-index: 2;
 }
 .contacts-input {
@@ -80,8 +98,17 @@
   width: 100%;
   z-index: 2;
 }
+.contacts-error-message {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+}
 .contacts-button {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -95,6 +122,7 @@
   border: none;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .contacts-button:hover {
   background: #009156;
