@@ -48,7 +48,8 @@ img {
 	margin: 0 auto;
 	padding-right: 20px;
 	padding-left: 20px;
-	height: 1750px;
+	/* min-height: 1750px; */
+	/* height: auto; */
 	margin-bottom: 80px;
 	position: relative;
 
@@ -101,8 +102,9 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 32px;
-width: 320px;
-height: 696px;
+max-width: 320px;
+/* min-height: 696px; */
+/* height: auto; */
 }
 
 .classic-title {
@@ -121,8 +123,9 @@ text-transform: uppercase;
 	justify-content: flex-start;
 	flex-direction: column;
 	gap: 24px;
-	height: 624px;
-	width: 320px;
+	/* min-height: 624px; */
+	/* height: auto; */
+	max-width: 320px;
 
 }
 
@@ -153,7 +156,7 @@ flex-shrink: 0;
 }
 
 .text-mod1 {
-	
+	min-height: 288px;
 }
 
 .text-mod2 {
@@ -161,7 +164,7 @@ flex-shrink: 0;
 }
 
 .content-wrap {
-width: 320px;
+max-width: 320px;
 display: flex;
 flex-direction: column;
 gap: 40px;
@@ -173,7 +176,7 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 32px;
-height: 288px;
+/* min-height: 288px; */
 }
 
 .education-list {
@@ -182,7 +185,8 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 12px;
-height: 216px;
+min-height: 216px;
+/* height: auto; */
 }
 
 .role {
@@ -191,7 +195,8 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 32px;
-height: 168px;
+/* min-height: 168px; */
+/* height: auto; */
 }
 
 .role-list {
@@ -200,7 +205,8 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: column;
 gap: 12px;
-height: 96px;
+/* min-height: 96px; */
+/* height: auto; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -223,8 +229,8 @@ letter-spacing: 0.02em;
 
 	}
 
-	.my-photo {
-		border-radius: 16px;
+.my-photo {
+border-radius: 16px;
 width: 336px;
 height: 392px;
 position: absolute;
@@ -232,10 +238,20 @@ top: 532px;
 	}
 
 	.bio {
-		margin-left: auto;
-		margin-bottom: 140px;
-		width: 336px;
+margin-left: auto;
+margin-bottom: 140px;
+min-width: 336px;
+max-width: 336px;
 height: 680px;
+	}
+
+	.text-mod1 {
+		min-height: 264px;
+		max-height: 264px;
+	}
+	
+	.text-mod2 {
+	
 	}
 
 	.bgi-wrap {
@@ -254,12 +270,14 @@ letter-spacing: 0.01em;
 	}
 
 	.text-wrap {
-width: 336px;
+min-width: 336px;
+max-width: 336px;
 height: 600px;
 	}
 
 	.content-wrap {
-		width: 704px;
+min-width: 704px;
+max-width: 704px;
 height: 280px;
 display: flex;
 align-items: flex-start;
@@ -278,6 +296,16 @@ gap: 32px;
 			height: 184px;
 		}
 
+.education-list {
+	min-height: 200px;
+	max-height: 200px;
+}
+
+.role-list {
+	min-height: 104px;
+	max-height: 104px;
+}
+
 
 
 
@@ -291,10 +319,17 @@ gap: 32px;
 .about-me {
 	max-width: 1280px;
 	height: 1244px;
+	margin-bottom: 164px;
+}
+
+.wrap-box-about {
+	width: 1216px;
+	height: 1244px;
 }
 
 .bio {
-width: 488px;
+min-width: 488px;
+max-width: 488px;
 height: 488px;
 margin-bottom: 312px;
 }
@@ -308,12 +343,23 @@ margin-bottom: 312px;
 }
 
 .text-wrap {
-	width: 488px;
+	min-width: 488px;
+	max-width: 488px;
 height: 408px;
 }
 
+.text-mod1 {
+	min-height: 168px;
+	max-height: 168px;
+}
+
+.text-mod2 {
+
+}
+
 .content-wrap {
-	width: 904px;
+min-width: 904px;
+max-width: 904px;
 height: 280px;
 gap: 136px;
 position: absolute;
@@ -330,6 +376,15 @@ left: 208px;
 position: absolute;
 top: 436px;
 left: 208px;
+}
+
+.education {
+	width: 384px;
+	height: 280px;
+}
+
+.role {
+	width: 384px;
 }
 
 
