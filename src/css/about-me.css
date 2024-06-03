@@ -137,7 +137,9 @@ text-transform: uppercase;
 	letter-spacing: 0.03em;
 	/* color: #292929; */
 	display: flex;
+	gap: 8px;
 }
+
 
 
 
@@ -153,6 +155,10 @@ line-height: 24px;
 margin: 10px;
 flex-shrink: 0;
 
+}
+
+.size-mod::before {
+	margin: 10px 6px 10px 6px;
 }
 
 .text-mod1 {
