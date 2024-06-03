@@ -12,7 +12,7 @@
 .my-projects-title {
   text-align: center;
   margin-bottom: 40px;
-  /* color: #00b068; */
+  color: #00b068;
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -22,7 +22,7 @@
 }
 
 .my-projects-span {
-  /* color: #292929; */
+  color: #292929;
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -38,7 +38,7 @@
 }
 
 .project-img {
-  max-width: 320px;
+  width: 320px;
   height: 184px;
   border-radius: 16px;
   background: url(<path-to-image>) lightgray -6.253px 0px / 103.908% 100.692% no-repeat;
@@ -167,7 +167,7 @@
   }
 
   .project-img {
-    max-width: 704px;
+    width: 704px;
     height: 404px;
     border-radius: 24px;
     background: url(<path-to-image>) lightgray -13.757px 0px / 103.908% 100.692%
@@ -209,7 +209,7 @@
   }
 
   .project-img {
-    max-width: 1008px;
+    width: 1008px;
     height: 578px;
     border-radius: 24px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
