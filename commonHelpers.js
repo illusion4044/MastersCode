@@ -17,10 +17,10 @@ import{A as w,S as b}from"./assets/vendor-2e4332b5.js";(function(){const r=docum
       `).join("")}const q=document.querySelector(".modal-form-close"),E=document.querySelector(".modal-container"),P=document.querySelector(".modal-list");q.addEventListener("click",u);P.addEventListener("click",B);function B(e){e.target.nodeName==="A"&&u()}function u(){E.classList.remove("is-open"),document.removeEventListener("keydown",M)}function M(e){e.code==="Escape"&&u()}document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(r){r.preventDefault(),document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"})})});const p=[{imageBase:"myprojects1",technologies:"React, JavaScript, Node JS, Git",title:"Power pulse webservice "},{imageBase:"myprojects2",technologies:"React, JavaScript, Node JS, Git",title:"Mimino website"},{imageBase:"myprojects3",technologies:"React, JavaScript, Node JS, Git",title:"Vyshyvanka vibes Landing Page"},{imageBase:"myprojects4",technologies:"React, JavaScript, Node JS, Git",title:"Green harvest online store"},{imageBase:"myprojects5",technologies:"React, JavaScript, Node JS, Git",title:"Wallet webservice"},{imageBase:"myprojects6",technologies:"React, JavaScript, Node JS, Git",title:"Chego jewelry website"},{imageBase:"myprojects7",technologies:"React, JavaScript, Node JS, Git",title:"Energy flow webservice "},{imageBase:"myprojects8",technologies:"React, JavaScript, Node JS, Git",title:"Fruitbox online store"},{imageBase:"myprojects9",technologies:"React, JavaScript, Node JS, Git",title:"English excellence webservice"},{imageBase:"myprojects10",technologies:"React, JavaScript, Node JS, Git",title:"Starlight studio landing page"}],J=document.querySelector(".my-projects-list"),f=document.querySelector(".more-btn");let n=0;const N=3,$=e=>`
     <li class="projects-item">
       <picture>
-        <source srcset="../img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(min-width: 1280px)">
-          <source srcset="../img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(min-width: 768px)">
-            <source srcset="../img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(max-width: 767px)">
-        <img class="project-img" src="../img/my-projects_img/desk-${e.imageBase}-1x.jpg" alt="${e.title}">
+        <source srcset="./img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="./img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./img/my-projects_img/desk-${e.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${e.imageBase}-2x.jpg 2x" media="(max-width: 767px)">
+        <img class="project-img" src="./img/my-projects_img/desk-${e.imageBase}-1x.jpg" alt="${e.title}">
       </picture>
       <p class="technologies">${e.technologies}</p>
       <div class="title-btn-wrapper">
@@ -28,7 +28,7 @@ import{A as w,S as b}from"./assets/vendor-2e4332b5.js";(function(){const r=docum
       <button class="visit-btn" type="button" onclick="window.open('https://github.com/illusion4044/MastersCode', '_blank');">
           Visit
           <svg class="visit-icon" width="24px" height="24px">
-          <use href="../img/symbol-defs.svg#icon-icon241"></use>
+          <use href="./img/symbol-defs.svg#icon-icon241"></use>
           </svg>
         </button>
       </div>
