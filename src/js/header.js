@@ -1,3 +1,6 @@
+import { openModalMenu } from './modal';
+
+
 const toggleSwitch = document.querySelector('#checkbox');
 const currentTheme = localStorage.getItem('theme') || 'light';
 const heroList = document.querySelector('.hero-social-list');
@@ -29,3 +32,4 @@ toggleSwitch.addEventListener('change', () => {
     localStorage.setItem('theme', 'light');
   }
 });
+burgerBtn.addEventListener('click', openModalMenu);

@@ -21,7 +21,6 @@
   line-height: 1em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-left: 20px;
 }
 
 .header-logo-green {
@@ -87,6 +86,17 @@ body.dark-mode {
   border-radius: 50%;
 }
 
+.slider:after {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 17px;
+  bottom: 1px;
+  background-color: #2a2d32;;
+  border-radius: 50%;
+}
+
 input:checked + .slider {
   background-color: #2a2d32;
   border: 1px solid #f0f0f0;
@@ -98,10 +108,10 @@ input:checked + .slider:before {
   background-color: #00b068;
 }
 
-/* .moon {
+.moon {
   background-color: #2a2d32;
   border-radius: 34px;
-} */
+}
 
 /* input:checked + .slider .moon {
   display: none;
