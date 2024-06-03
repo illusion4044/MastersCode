@@ -159,8 +159,10 @@
     font-size: 108px;
     line-height: 115%;
     letter-spacing: 0.02em;
-    width: 550px; /*507*/
+    text-transform: uppercase;
+    width: 515px; /*507*/
     margin: 0 0 60px;
+    padding-top: 104px;
   }
   .contacts-text {
     font-weight: 400;
@@ -202,7 +204,14 @@
     padding-bottom: 164px;
   }
   .contacts-header {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    width: 515px;
     margin: 0 0 80px;
+    padding-top: 144px;
   }
   .contacts-text {
     width: 488px;
