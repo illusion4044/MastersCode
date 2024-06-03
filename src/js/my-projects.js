@@ -61,10 +61,10 @@ const createProjectMarkup = project => {
   return `
     <li class="projects-item">
       <picture>
-        <source srcset="img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 1280px)">
-          <source srcset="img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 768px)">
-            <source srcset="img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(max-width: 767px)">
-        <img class="project-img" src="img/my-projects_img/desk-${project.imageBase}-1x.jpg" alt="${project.title}">
+        <source srcset="../img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 1280px)">
+          <source srcset="../img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="../img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ../img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(max-width: 767px)">
+        <img class="project-img" src="../img/my-projects_img/desk-${project.imageBase}-1x.jpg" alt="${project.title}">
       </picture>
       <p class="technologies">${project.technologies}</p>
       <div class="title-btn-wrapper">
