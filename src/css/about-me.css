@@ -261,6 +261,8 @@ height: 680px;
 		position: absolute;
 		top: 856px;
 		left: 368px;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.classic-title {
@@ -334,7 +336,7 @@ height: 488px;
 margin-bottom: 312px;
 }
 .bgi-wrap {
-	background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
+	background-image: url(../img/about-me_img/desk-aboutme-decor\ bg\ 2-1x.png);
 	width: 384px;
 	height: 288px;
 	position: absolute;
