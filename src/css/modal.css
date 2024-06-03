@@ -22,6 +22,7 @@
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 16px;
     max-width: 360px;
     box-sizing: border-box;
@@ -35,14 +36,17 @@
     line-height: 1;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #292929;
+    /* color: #292929; */
     text-decoration: none;
 }
 
 .modal-form-close {
     outline: none;
     border: none;
-    fill: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: #292929;
 }
 
 .modal-main {
@@ -77,7 +81,7 @@
 
 .modal-item a {
     text-decoration: none;
-    color: #292929;
+    /* color: #292929; */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 16px;
