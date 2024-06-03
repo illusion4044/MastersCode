@@ -38,7 +38,7 @@
 }
 
 .project-img {
-  width: 320px;
+  max-width: 320px;
   height: 184px;
   border-radius: 16px;
   background: url(<path-to-image>) lightgray -6.253px 0px / 103.908% 100.692% no-repeat;
