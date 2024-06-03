@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 20px 80px 20px;
   }
 
   .benefits-ul {
@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 0px 0px 124px 0px;
+    padding: 0px 32px 124px 32px;
   }
   .benefits-ul {
     display: flex;
@@ -132,7 +132,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0px 0px 164px 0px;
+    padding: 0px 32px 164px 32px;
   }
   .benefits-h1 {
     float: left;
