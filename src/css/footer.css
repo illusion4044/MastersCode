@@ -1,15 +1,23 @@
-.logo {
-  font-size: 32px;
+.logo-head {
+  min-width: 320px;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 25px;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: normal;
   text-transform: uppercase;
+  font-weight: bold;
+  width: 233px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Impact', sans-serif;
 }
+.logo {
+  font-weight: bold;
+}
+
 .footer-logo {
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: green;
+  color: #14c57c;
 }
 
 .social-list {
@@ -35,25 +43,18 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 24px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
 }
 
 .container-footer {
   min-width: 320px;
   max-width: 360px;
   padding-top: 40px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
 }
 
 /*-----------------------------tablet--------------------------------------------------*/
 @media only screen and (min-width: 768px) {
   .container-footer {
     min-width: 768px;
-    /* padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 0px; */
   }
   .social-list {
     display: flex;
@@ -64,11 +65,16 @@
   }
 
   .text {
-    /* padding-left: 32px;
-    padding-right: 32px; */
     text-align: unset;
     display: flex;
     justify-content: flex-end;
+  }
+  .logo {
+    font-size: 32px;
+  }
+
+  .footer-logo {
+    font-size: 32px;
   }
 }
 
@@ -80,18 +86,13 @@
     display: flex;
     flex-direction: row;
     min-width: 1280px;
-    /* padding-left: 32px;
-    padding-right: 32px; */
   }
 
   .social-list {
     margin-top: 0px;
     margin-left: auto;
-    /* padding-right: 0px; */
   }
   .text {
     text-align: unset;
-    /* padding-left: 32px;
-    padding-right: 32px; */
   }
 }
