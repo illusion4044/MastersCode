@@ -105,14 +105,24 @@
   content: none !important; 
 }
 
+
 @media screen and (min-width: 768px){
 .reviews {
   padding-bottom: 20px;
+}
+.reviews-header {
+ font-size: 108px;
+line-height: 1.14815;
+letter-spacing: 0.02em;
+margin-bottom: 60px;
 }
 }
 
 @media screen and (min-width: 1280px){
 .reviews {
   padding-bottom: 20px;
+}
+.reviews-header {
+  margin-bottom: 80px;
 }
 }
