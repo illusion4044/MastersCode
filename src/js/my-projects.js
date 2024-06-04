@@ -1,51 +1,62 @@
+import myprojects1 from '../img/my-projects_img/desk-myprojects1-1x.jpg';
+import myprojects2 from '../img/my-projects_img/desk-myprojects2-1x.jpg';
+import myprojects3 from '../img/my-projects_img/desk-myprojects3-1x.jpg';
+import myprojects4 from '../img/my-projects_img/desk-myprojects4-1x.jpg';
+import myprojects5 from '../img/my-projects_img/desk-myprojects5-1x.jpg';
+import myprojects6 from '../img/my-projects_img/desk-myprojects6-1x.jpg';
+import myprojects7 from '../img/my-projects_img/desk-myprojects7-1x.jpg';
+import myprojects8 from '../img/my-projects_img/desk-myprojects8-1x.jpg';
+import myprojects9 from '../img/my-projects_img/desk-myprojects9-1x.jpg';
+import myprojects10 from '../img/my-projects_img/desk-myprojects10-1x.jpg';
+
 const projects = [
   {
-    imageBase: 'myprojects1',
+    imageBase: myprojects1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Power pulse webservice ',
   },
   {
-    imageBase: 'myprojects2',
+    imageBase: myprojects2,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Mimino website',
   },
   {
-    imageBase: 'myprojects3',
+    imageBase: myprojects3,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Vyshyvanka vibes Landing Page',
   },
   {
-    imageBase: 'myprojects4',
+    imageBase: myprojects4,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Green harvest online store',
   },
   {
-    imageBase: 'myprojects5',
+    imageBase: myprojects5,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Wallet webservice',
   },
   {
-    imageBase: 'myprojects6',
+    imageBase: myprojects6,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Chego jewelry website',
   },
   {
-    imageBase: 'myprojects7',
+    imageBase: myprojects7,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Energy flow webservice ',
   },
   {
-    imageBase: 'myprojects8',
+    imageBase: myprojects8,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Fruitbox online store',
   },
   {
-    imageBase: 'myprojects9',
+    imageBase: myprojects9,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'English excellence webservice',
   },
   {
-    imageBase: 'myprojects10',
+    imageBase: myprojects10,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'Starlight studio landing page',
   },
@@ -59,20 +70,31 @@ const projectsPerPage = 3;
 
 const createProjectMarkup = project => {
   return `
-    <li class="projects-item">
+<li class="projects-item">
       <picture>
-        <source srcset="./img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 1280px)">
-          <source srcset="./img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(min-width: 768px)">
-            <source srcset="./img/my-projects_img/desk-${project.imageBase}-1x.jpg 1x, ./img/my-projects_img/desk-${project.imageBase}-2x.jpg 2x" media="(max-width: 767px)">
-        <img class="project-img" src="./img/my-projects_img/desk-${project.imageBase}-1x.jpg" alt="${project.title}">
+        <source srcset="${project.imageBase} 1x, ${project.imageBase.replace(
+    '-1x',
+    '-2x'
+  )} 2x" media="(min-width: 1280px)">
+        <source srcset="${project.imageBase} 1x, ${project.imageBase.replace(
+    '-1x',
+    '-2x'
+  )} 2x" media="(min-width: 768px)">
+        <source srcset="${project.imageBase} 1x, ${project.imageBase.replace(
+    '-1x',
+    '-2x'
+  )} 2x" media="(max-width: 767px)">
+        <img class="project-img" src="${project.imageBase}" alt="${
+    project.title
+  }">
       </picture>
       <p class="technologies">${project.technologies}</p>
       <div class="title-btn-wrapper">
-        <p class="my-project-title"> ${project.title} </p>
-      <button class="visit-btn" type="button" onclick="window.open('https://github.com/illusion4044/MastersCode', '_blank');">
+        <p class="my-project-title">${project.title}</p>
+        <button class="visit-btn" type="button" onclick="window.open('https://github.com/illusion4044/MastersCode', '_blank');">
           Visit
           <svg class="visit-icon" width="24px" height="24px">
-          <use href="./img/symbol-defs.svg#icon-icon241"></use>
+            <use href="./img/symbol-defs.svg#icon-icon241"></use>
           </svg>
         </button>
       </div>
