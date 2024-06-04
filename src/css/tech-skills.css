@@ -128,7 +128,7 @@ font-size: 32px;
 line-height: 1.25;
 letter-spacing: 0.02em;
 text-transform: uppercase;
-color: #292929;
+/* color: #292929; */
 display: flex;
 gap: 16px;
 align-items: center;
