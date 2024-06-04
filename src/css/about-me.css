@@ -261,7 +261,7 @@ height: 680px;
 	}
 
 	.bgi-wrap {
-		background-image: url(./img/about-me_img/tab-decor-aboutme-1x.png);
+		background-image: url(../img/about-me_img/tab-decor-aboutme-1x.png);
 		width: 336px;
 		height: 252px;
 		position: absolute;
@@ -342,7 +342,7 @@ height: 488px;
 margin-bottom: 312px;
 }
 .bgi-wrap {
-	background-image: url(./img/about-me_img/desk-aboutme-decor-bg2-1x.png);
+	background-image: url(../img/about-me_img/desk-aboutme-decor-bg2-1x.png);
 	width: 384px;
 	height: 288px;
 	position: absolute;
