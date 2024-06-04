@@ -94,7 +94,7 @@ const createProjectMarkup = project => {
         <button class="visit-btn" type="button" onclick="window.open('https://github.com/illusion4044/MastersCode', '_blank');">
           Visit
           <svg class="visit-icon" width="24px" height="24px">
-            <use href="./img/symbol-defs.svg#icon-icon241"></use>
+            <use href="../img/symbol-defs.svg#icon-icon241"></use>
           </svg>
         </button>
       </div>
