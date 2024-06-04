@@ -7,14 +7,13 @@
 .hero-container {
   padding-bottom: 72px;
   box-sizing: border-box;
-  background-image: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png');
-  background-size: cover; /* розтягнути зображення, щоб покрити весь елемент */
-  background-repeat: no-repeat; /* не повторювати зображення */
-  background-position: center 16px; /* вирівняти зображення по центру */
+  background: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png') center/cover
+    no-repeat;
+  background-position: -3px 10px;
 }
 
 .hero-text-content {
-  margin-top: 112px;
+  padding-top: 112px;
 }
 
 .hero-title {
@@ -125,14 +124,13 @@
 
   .hero-container {
     padding-bottom: 80px;
-    background-image: url('../img/basic-fone_img/tab-basic-decor\ bg\ 5-1x.png');
-    background-size: cover; /* розтягнути зображення, щоб покрити весь елемент */
-    background-repeat: no-repeat; /* не повторювати зображення */
-    background-position: center center; /* вирівняти зображення по центру */
+    background: url('../img/basic-fone_img/tab-basic-decor\ bg\ 5-1x.png ')
+      center/cover no-repeat;
+    background-position: -3px center;
   }
 
   .hero-text-content {
-    margin-top: 88px;
+    padding-top: 88px;
   }
 
   .hero-title {
@@ -187,15 +185,19 @@
   }
 
   .hero-container {
-    padding-bottom: 132px;
+	 background: url('../img/basic-fone_img/desk-hero-top-bg.png') no-repeat;
+    background-size: 356px 276px;
+    background-position: right 20px top;
+	 padding-bottom: 0;
   }
 
   .hero-text-content {
-    margin-top: 88px;
+    padding-top: 168px;
+    
   }
 
   .hero-title {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .hero-img-main {
@@ -208,12 +210,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+	 padding-bottom: 132px;
+	 padding-top: 80px;
+	 background: url('../img/basic-fone_img/desk-hero-bottom-bg.png') no-repeat;
+    background-size: 352px 265px;
+    background-position: left 210px top;
   }
 
   .hero-btn-wrapper {
     left: 76px;
+	 
     /* margin-left: 227px; */
-    /* width: 416px; */
+    /* width: 600px; */
   }
 
   .hero-btn-square {
