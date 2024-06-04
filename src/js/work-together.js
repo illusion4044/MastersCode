@@ -1,11 +1,11 @@
 import { openPopupModal } from "./popup-modal";
 //openPopupModal();
-const conctacsForm = document.querySelector('.contacts-form');
+const contactsForm = document.querySelector('.contacts-form');
 const inputEmail = document.querySelector('.contacts-input');
 const inputMessage = document.getElementById('contacts-message');
 const inputErrorMessage = document.querySelector('.contacts-error-message');
 const checkboxIcon = document.querySelector('.contacts-checkbox-icon');
-conctacsForm.addEventListener('submit', (event) => {
+contactsForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!inputEmail.value.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
         inputEmail.style.color = '#E74A3B';
@@ -17,7 +17,7 @@ conctacsForm.addEventListener('submit', (event) => {
             email: inputEmail.value,
             message: inputMessage.value
         };
-        fetch('https://illusion4044.github.io/MastersCode/', {
+        fetch('https://formspree.io/f/mvoejbkp', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -48,3 +48,4 @@ inputEmail.addEventListener('input', () => {
         checkboxIcon.style.display = 'none';
     }
 })
+//https://formspree.io/forms/mvoejbkp/submissions
