@@ -1,5 +1,3 @@
-.section {
-}
 .hero-section {
   padding-bottom: 80px;
 }
@@ -7,7 +5,7 @@
 .hero-container {
   padding-bottom: 72px;
   box-sizing: border-box;
-  background: url('../img/basic-fone_img/mob-mod-decor\ bg-1x.png') center/cover
+  background: url('../img/basic-fone_img/mob-mod-decor-bg-1x.png') center/cover
     no-repeat;
   background-position: -3px 10px;
 }
@@ -44,12 +42,10 @@
   left: 4px;
   max-width: 320px;
   height: 92px;
-  /* position: relative; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: flex-end; */
-  /* margin-bottom: 40px; */
+ 
 }
 
 .hero-btn-icon {
@@ -67,8 +63,6 @@
 }
 
 .hero-btn-square {
-  /* position: absolute; */
-  /* right: 0; */
   margin-left: auto;
   border-radius: 16px;
   width: 165px;
@@ -124,7 +118,7 @@
 
   .hero-container {
     padding-bottom: 80px;
-    background: url('../img/basic-fone_img/tab-basic-decor\ bg\ 5-1x.png ')
+    background: url('../img/basic-fone_img/tab-basic-decor-bg-5-1x.png ')
       center/cover no-repeat;
     background-position: -3px center;
   }
@@ -141,7 +135,6 @@
   }
 
   .hero-btn-wrapper {
-    /* max-width: 416px; */
     height: 96px;
   }
 
@@ -219,9 +212,6 @@
 
   .hero-btn-wrapper {
     left: 76px;
-	 
-    /* margin-left: 227px; */
-    /* width: 600px; */
   }
 
   .hero-btn-square {

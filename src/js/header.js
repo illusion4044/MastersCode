@@ -1,10 +1,10 @@
 import { openModalMenu } from './modal';
 
-
 const toggleSwitch = document.querySelector('#checkbox');
 const currentTheme = localStorage.getItem('theme') || 'light';
 const heroList = document.querySelector('.hero-social-list');
 const burgerBtn = document.querySelector('.open-menu-icon');
+// const themeSwitcherMoon = document.querySelector('.slider:after');
 
 if (currentTheme === 'dark') {
   document.body.classList.add('dark-mode');
@@ -15,6 +15,7 @@ if (currentTheme === 'dark') {
   document.body.classList.add('light-mode');
   heroList.style.backgroundColor = '#e4e5e6';
   burgerBtn.style.fill = '#292929';
+//   themeSwitcherMoon.style.display = 'none';
 }
 
 toggleSwitch.addEventListener('change', () => {
@@ -30,6 +31,7 @@ toggleSwitch.addEventListener('change', () => {
     heroList.style.backgroundColor = '#e4e5e6';
     burgerBtn.style.fill = '#292929';
     localStorage.setItem('theme', 'light');
+   //  themeSwitcherMoon.style.display = 'none';
   }
 });
 burgerBtn.addEventListener('click', openModalMenu);

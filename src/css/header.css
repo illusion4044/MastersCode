@@ -30,7 +30,7 @@
 /* --------------- Theme switcher ------------------- */
 
 body {
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 250ms, color 250ms;
 }
 
 body.light-mode {
@@ -38,9 +38,18 @@ body.light-mode {
   color: #292929;
 }
 
+body.light-mode .slider:after {
+  /* display: none; */
+  visibility: hidden;
+  transition: visibility 10ms;
+}
+
 body.dark-mode {
   background-color: #292929;
   color: #f0f0f0;
+}
+
+body.dark-mode .slider:after {
 }
 
 .theme-switch-wrapper {
@@ -80,9 +89,9 @@ body.dark-mode {
   height: 20px;
   width: 20px;
   left: 1px;
-  bottom: 1px;
+  bottom: 0.5px;
   background-color: #00b068;
-  transition: 250ms;
+  transition: 100ms;
   border-radius: 50%;
 }
 
@@ -93,32 +102,28 @@ body.dark-mode {
   width: 20px;
   left: 17px;
   bottom: 1px;
-  background-color: #2a2d32;;
+  background-color: #2a2d32;
+  transition: 250ms;
   border-radius: 50%;
+  
 }
 
 input:checked + .slider {
   background-color: #2a2d32;
   border: 1px solid #f0f0f0;
+  transition: background-color 200ms;
 }
 
 input:checked + .slider:before {
-  transform: translateX(24px);
-  /* transform: translateY(10px); */
+  transform: translateX(23.5px);
   background-color: #00b068;
 }
 
-.moon {
+input:checked + .slider:after {
   background-color: #2a2d32;
-  border-radius: 34px;
+ visibility: visible;
+  transition: visibility 1s;
 }
-
-/* input:checked + .slider .moon {
-  display: none;
-  height: 20px;
-  background-color: red;
-} */
-
 .header-nav-wrapp {
   display: flex;
   flex-direction: row;
