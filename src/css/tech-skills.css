@@ -89,12 +89,28 @@ height: 104px;
 
  .green-cube {
 	background-color: #bcdfd1;
- }
+}
 
- .black-cube {
+.black-cube {
 background-color: #e4e5e6;
 transform: rotate(2deg);
+}
+
+ .green-cube-dark-mod {
+	background-color: #214136;
  }
+
+
+ .black-cube-dark-mod {
+	background-color: #2a2d32;
+}
+
+
+
+ .rotate-wrap-container {
+	height: 104px;
+	overflow: hidden;
+}
  
  .marquee__line {
 	flex-shrink: 0;
@@ -116,7 +132,13 @@ color: #292929;
 display: flex;
 gap: 16px;
 align-items: center;
+
  
+ }
+
+ .marquee__line-dark-mod {
+	color: #f0f0f0;
+
  }
 
 .try-dot::before {
@@ -141,6 +163,15 @@ align-items: center;
 	display: inline-block;
 }
 
+.try-dot-dark-mod::before {
+	background-color:#14c57c;
+}
+
+.try-dot-black-dark-mod::before {
+	background-color: #f0f0f0;
+}
+
+
 
  .hidden-element {
 	content: "";
@@ -164,6 +195,14 @@ align-items: center;
 	display: inline-block;
  }
 
+ .hidden-element-dark-mod {
+	background-color:#14c57c;
+ }
+
+ .hidden-element-black-dark-mod {
+	background-color: #f0f0f0;
+ }
+
  .first-cube-elem {
 	content: "";
 	background-color: #00b068;
@@ -179,23 +218,13 @@ align-items: center;
  .color-mode {
 color: #00b068;
  }
- 
- /* .wrap::before {
-		display: inline-block;
-	 content: "";
-	 border-radius: 2px;
- width: 24px;
- height: 24px;
- background: #00b068;
- transform: rotate(-180deg);
- padding: 8px;
- } */
 
- .black-magic::before {
-	
-
+ .color-mode-dark-mod {
+	color: #14c57c;
  }
  
+
+
  @keyframes marqueeLine {
 	from {
 	  transform: translateX(0);
@@ -216,6 +245,12 @@ margin-bottom: 124px;
 		padding: 40px 0px;
 height: 128px;
 	}
+
+	.rotate-wrap-container {
+		height: 128px;
+	}
+
+
 }
 
 @media only screen and (min-width: 1280px) {
