@@ -8,7 +8,7 @@ import myprojects7 from '../img/my-projects_img/desk-myprojects7-1x.jpg';
 import myprojects8 from '../img/my-projects_img/desk-myprojects8-1x.jpg';
 import myprojects9 from '../img/my-projects_img/desk-myprojects9-1x.jpg';
 import myprojects10 from '../img/my-projects_img/desk-myprojects10-1x.jpg';
-import icon from './img/SVG/icon241.svg';
+import icon from '../img/SVG/icon241.svg';
 
 const projects = [
   {
