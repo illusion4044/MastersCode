@@ -12,7 +12,7 @@
     <script type="module" crossorigin src="/MastersCode/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/MastersCode/assets/vendor-2e4332b5.js">
     <link rel="stylesheet" href="/MastersCode/assets/vendor-aff52511.css">
-    <link rel="stylesheet" href="/MastersCode/assets/index-3d897e9e.css">
+    <link rel="stylesheet" href="/MastersCode/assets/index-f7838b21.css">
   </head>
   <body>
     <header>
@@ -417,10 +417,10 @@
           type="text"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
         />
-        <svg class="contacts-checkbox-icon" width="14" height="14">
+        <svg class="contacts-checkbox-icon-email" width="14" height="14">
           <use href="/MastersCode/assets/symbol-defs-3ff6dbc6.svg#icon-checkbox"></use>
         </svg>
-        <span class="contacts-error-message">Invalid email, try again</span>
+        <span class="contacts-error-email">Invalid email, try again</span>
       </label>
       <label class="contacts-label"
         ><input
@@ -429,7 +429,12 @@
           id="contacts-message"
           placeholder="Message"
           type="text"
-      /></label>
+        />
+        <svg class="contacts-checkbox-icon-message" width="14" height="14">
+          <use href="/MastersCode/assets/symbol-defs-3ff6dbc6.svg#icon-checkbox"></use>
+        </svg>
+        <span class="contacts-error-message">Invalid message, try again</span>
+      </label>
       <button type="submit" class="contacts-button">SEND MESSAGE</button>
     </form>
   </div>
