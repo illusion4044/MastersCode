@@ -105,6 +105,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .accordion-section {
+    padding: 0 0 124px 0;
+  }
+
   .faq-container {
     display: flex;
     gap: 60px;
@@ -139,6 +143,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .accordion-section {
+    padding: 0 0 164px 0;
+  }
   .faq-container {
     display: flex;
     justify-content: space-between;
