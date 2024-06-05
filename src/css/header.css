@@ -204,7 +204,7 @@ input:checked + .slider:after {
 @media only screen and (min-width: 1280px) {
 }
 
-.try-dot-black-js::before {
+/* .try-dot-black-js::before {
   content: '';
   background-color: #f0f0f0;
   width: 8px;
@@ -233,4 +233,4 @@ input:checked + .slider:after {
 .visit-btn-js {
   background: #2a2d32 !important;
   color: #f0f0f0 !important;
-}
+} */
