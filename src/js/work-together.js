@@ -47,6 +47,7 @@ contactsForm.addEventListener('submit', (event) => {
     }
 })
 inputEmail.addEventListener('input', () => {
+    inputEmail.style.color = '#292929';
     if (document.body.classList.contains('light-mode')) {
          inputEmail.style.color = '#292929';
      }
