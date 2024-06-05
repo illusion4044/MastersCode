@@ -179,12 +179,6 @@
     width: 100%;
   }
 
-  /* .faq-decor {
-    display: block;
-    max-width: 526px;
-    max-height: 406px;
-  } */
-
   .faq-decor {
     display: block;
     background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
@@ -192,6 +186,5 @@
     height: 408px;
     position: absolute;
     bottom: 0;
-    /* top: 0; */
   }
 }
