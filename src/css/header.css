@@ -81,6 +81,7 @@ body.dark-mode .slider:after {
   transition: 250ms;
   border-radius: 16px;
   border: 1px solid #f0f0f0;
+  list-style: none;
 }
 
 .slider:before {
@@ -96,6 +97,8 @@ body.dark-mode .slider:after {
 }
 
 .slider:after {
+  visibility: hidden;
+  display: none;
   position: absolute;
   content: '';
   height: 20px;
@@ -105,7 +108,6 @@ body.dark-mode .slider:after {
   background-color: #2a2d32;
   transition: 250ms;
   border-radius: 50%;
-  
 }
 
 input:checked + .slider {
@@ -120,9 +122,10 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider:after {
+	display: inline;
   background-color: #2a2d32;
- visibility: visible;
-  transition: visibility 1s;
+  visibility: visible;
+  transition: visibility 100ms;
 }
 .header-nav-wrapp {
   display: flex;
@@ -195,4 +198,30 @@ input:checked + .slider:after {
 /* ============== Desktop =================== */
 
 @media only screen and (min-width: 1280px) {
+}
+
+.try-dot-black-js::before {
+  content: '';
+  background-color: #f0f0f0;
+  width: 8px;
+  height: 8px;
+  margin: 8px 24px 8px 24px;
+  border-radius: 2px;
+  transform: rotate(-180deg);
+  display: inline-block;
+}
+
+.hidden-element-black-js {
+  content: '';
+  background: #f0f0f0 !important;
+  width: 8px;
+  height: 8px;
+  margin: 8px;
+  border-radius: 2px;
+  transform: rotate(-180deg);
+  display: inline-block;
+}
+
+.swiper-slide-js {
+  background-color: #2a2d32 !important;
 }
