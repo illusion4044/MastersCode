@@ -17,7 +17,7 @@
 .hero-title {
   font-family: Impact, sans-serif;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 64px;
   line-height: 1.25em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -32,7 +32,6 @@
   display: none;
   border-radius: 16px;
 }
-
 
 .hero-content-wrapper {
   position: relative;
