@@ -7,6 +7,7 @@ const inputErrorEmail = document.querySelector('.contacts-error-email');
 const inputErrorMessage = document.querySelector('.contacts-error-message');
 const checkboxIconEmail = document.querySelector('.contacts-checkbox-icon-email');
 const checkboxIconMessage = document.querySelector('.contacts-checkbox-icon-message');
+
 contactsForm.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!inputEmail.value.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
@@ -35,6 +36,7 @@ contactsForm.addEventListener('submit', (event) => {
                 openPopupModal();
                 contactsForm.reset();
                 checkboxIconEmail.style.display = 'none';
+                checkboxIconMessage.style.display = 'none';
             } else {
                 console.error('Error submitting form:', response.statusText);
             }
@@ -45,6 +47,12 @@ contactsForm.addEventListener('submit', (event) => {
     }
 })
 inputEmail.addEventListener('input', () => {
+    if (document.body.classList.contains('light-mode')) {
+         inputEmail.style.color = '#292929';
+     }
+    if (document.body.classList.contains('dark-mode')) {
+         inputEmail.style.color = '#F0F0F0';
+     }
     inputErrorEmail.style.display = 'none';
     if (inputEmail.value.match(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
         checkboxIconEmail.style.display = 'block';
