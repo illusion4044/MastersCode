@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    padding: 0px 20px 80px 20px;
+    padding: 80px 20px 80px 20px;
   }
 
   .benefits-ul {
@@ -74,7 +74,7 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 0px 32px 124px 32px;
+    padding: 124px 32px 124px 32px;
   }
   .benefits-ul {
     display: flex;
@@ -134,13 +134,23 @@
   }
 }
 
+@media (min-resolution: 192dpi) and (min-width: 1280px) {
+  .benefits {
+    background-image: url('../img/basic-fone_img/tab-basic-decor-bg-3-2x.png');
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .benefits {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0px 32px 164px 32px;
+    padding: 164px 32px 164px 32px;
+    background-image: url('../img/basic-fone_img/tab-basic-decor-bg-3-1x.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
   }
   .benefits-h1 {
     float: left;
