@@ -38,6 +38,10 @@ body.light-mode {
   color: #292929;
 }
 
+body.light-mode .modal-container {
+  background-color: #1e2023;
+}
+
 body.light-mode .slider:after {
   /* display: none; */
   visibility: hidden;
@@ -45,7 +49,7 @@ body.light-mode .slider:after {
 }
 
 body.dark-mode {
-  background-color: #292929;
+  background-color: #1e2023;
   color: #f0f0f0;
 }
 
@@ -80,7 +84,7 @@ body.dark-mode .slider:after {
   background-color: #e0e0e0;
   transition: 250ms;
   border-radius: 16px;
-  border: 1px solid #f0f0f0;
+  /* border: 1px solid #f0f0f0; */
   list-style: none;
 }
 
@@ -112,7 +116,7 @@ body.dark-mode .slider:after {
 
 input:checked + .slider {
   background-color: #2a2d32;
-  border: 1px solid #f0f0f0;
+  /* border: 1px solid #f0f0f0; */
   transition: background-color 200ms;
 }
 
@@ -122,7 +126,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider:after {
-	display: inline;
+  display: inline;
   background-color: #2a2d32;
   visibility: visible;
   transition: visibility 100ms;
@@ -224,4 +228,9 @@ input:checked + .slider:after {
 
 .swiper-slide-js {
   background-color: #2a2d32 !important;
+}
+
+.visit-btn-js {
+  background: #2a2d32 !important;
+  color: #f0f0f0 !important;
 }

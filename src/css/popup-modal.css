@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     stroke: #292929;
+	 background-color: transparent;
 }
 
 .modal-title {
