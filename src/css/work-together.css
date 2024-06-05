@@ -64,7 +64,8 @@
   align-items: center;
   margin-right: 18.25px;
 }
-.contacts-checkbox-icon {
+.contacts-checkbox-icon-email,
+.contacts-checkbox-icon-message {
   display: none;
   position: absolute;
   top: 17px;
@@ -98,7 +99,12 @@
   width: 100%;
   z-index: 2;
 }
-.contacts-error-message {
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #e4e5e6 inset !important;
+  box-shadow: 0 0 0 1000px #e4e5e6 inset !important;
+}
+.contacts-error-message,
+.contacts-error-email {
   display: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -154,6 +160,10 @@
 @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
   .contacts {
     padding-bottom: 124px;
+    background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
+    background-size: 336px 260px;
+    background-position: top right;
+    background-repeat: no-repeat;
   }
   .contacts-header {
     font-weight: 400;
@@ -203,6 +213,10 @@
 @media screen and (min-width: 1279.98px) {
   .contacts {
     padding-bottom: 164px;
+    background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
   }
   .contacts-header {
     font-weight: 400;

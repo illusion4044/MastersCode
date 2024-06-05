@@ -129,7 +129,7 @@
 
 /* This hover does not work with the color commented */
 .more-btn:hover {
-  /* color: #00b068; */
+  color: #00b068;
 }
 
 .btn-is-hidden {
