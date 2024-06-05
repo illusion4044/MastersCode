@@ -4,6 +4,7 @@ import { openModalMenu } from './modal';
 // let currentTheme = localStorage.getItem('theme') || 'light';
 // const heroList = document.querySelector('.hero-social-list');
 const burgerBtn = document.querySelector('.open-menu-icon');
+burgerBtn.addEventListener('click', openModalMenu);
 
 // const movingLineTop = document.querySelector('.green-cube');
 // const movingLineBottom = document.querySelector('.black-cube');
@@ -174,4 +175,3 @@ const burgerBtn = document.querySelector('.open-menu-icon');
 //     localStorage.setItem('theme', 'light');
 //   }
 // });
-burgerBtn.addEventListener('click', openModalMenu);
