@@ -1,5 +1,5 @@
 .accordion-section {
-  padding: 0 20px 80px 20px;
+  padding: 0 0 80px 0;
 }
 
 .faq-container {
@@ -105,10 +105,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .accordion-section {
-    padding: 0 32px 80px 32px;
-  }
-
   .faq-container {
     display: flex;
     gap: 60px;
@@ -152,6 +148,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
   }
 
   .asked-question-title {
@@ -182,8 +179,19 @@
     width: 100%;
   }
 
-  .faq-decor {
+  /* .faq-decor {
     display: block;
     max-width: 526px;
+    max-height: 406px;
+  } */
+
+  .faq-decor {
+    display: block;
+    background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
+    width: 526px;
+    height: 408px;
+    position: absolute;
+    bottom: 0;
+    /* top: 0; */
   }
 }
