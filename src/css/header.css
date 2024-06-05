@@ -205,10 +205,6 @@ input:checked + .slider:after {
 }
 
 
-
-
-
-
 /* .try-dot-black-js::before {
   content: '';
   background-color: #f0f0f0;
