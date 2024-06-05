@@ -160,6 +160,10 @@ input:-webkit-autofill {
 @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
   .contacts {
     padding-bottom: 124px;
+    background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
+    background-size: 336px 260px;
+    background-position: top right;
+    background-repeat: no-repeat;
   }
   .contacts-header {
     font-weight: 400;
@@ -209,6 +213,10 @@ input:-webkit-autofill {
 @media screen and (min-width: 1279.98px) {
   .contacts {
     padding-bottom: 164px;
+    background-image: url('../img/work-together_img/desk-decor-lets-1x.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
   }
   .contacts-header {
     font-weight: 400;
