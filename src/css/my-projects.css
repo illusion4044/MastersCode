@@ -1,7 +1,7 @@
 .section-my-projects {
   display: flex;
   flex-direction: column;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 .my-projects-container {
@@ -150,9 +150,9 @@
 /* Tablet -------------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
-  .section-my-projects {
-    padding-bottom: 124px;
-  }
+  /* .section-my-projects {
+     padding-bottom: 124px;
+  } */
 
   .my-projects-title {
     margin-bottom: 60px;
@@ -201,9 +201,9 @@
 
 /* Desktop ---------------------------------------------------*/
 @media only screen and (min-width: 1280px) {
-  .section-my-projects {
+  /* .section-my-projects {
     padding-bottom: 164px;
-  }
+  } */
   .my-projects-title {
     margin-bottom: 80px;
   }
