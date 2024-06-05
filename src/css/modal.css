@@ -36,7 +36,7 @@
     line-height: 1;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: #292929; */
+   
     text-decoration: none;
 }
 
@@ -48,6 +48,11 @@
     justify-content: center;
     stroke: #292929;
     padding: 0;
+}
+
+.modal-btn-icon{
+	fill: #292929;
+	background-color: transparent;
 }
 
 .modal-main {
